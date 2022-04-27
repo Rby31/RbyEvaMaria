@@ -135,7 +135,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('This Movie Not Found In DataBase')
+            k = await query.message.edit('⚠️Sorry !!! This Movie Is Not Available !\n\n Please Msg To ...\n\n ✌️Admin  ➠  @RbyAdminBot⚡')
             await asyncio.sleep(10)
             await k.delete()
 
