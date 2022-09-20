@@ -244,6 +244,7 @@ async def start(client, message):
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
+        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('🛡️ 𝗠𝗮𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 🛡️', url='https://t.me/RbyLinkz/2') ] ] ),
         protect_content=True if pre == 'filep' else False,
         )
                     
